@@ -1,371 +1,697 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+	<head>
+		<title>Lucas Silva</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Roboto"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+			integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-<head runat="server">
-    <title>Lucas Silva - Portfólio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto' />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Roboto", sans-serif;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        img {
-            border-radius: 50%;
-        }
-
-        .progress-bar {
-            height: 18px;
-            width: 50%
-        }
-
-        .company {
-            float: right;
-        }
-    </style>
-</head>
-
-<body class="w3-dark-grey">
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width: 1400px;">
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-            <!-- Left Column -->
-            <div class="w3-third">
-                <div class="w3-grey w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="https://avatars1.githubusercontent.com/u/22208286?s=400&v=4" style="width: 100%"
-                            alt="Avatar" title="Lucas Silva" />
-                        <div class="w3-display-bottomleft w3-container w3-text-black">
-                            <h2 class="w3-tag w3-light-blue w3-round-xxlarge"><b>Lucas Silva</b></h2>
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <p class="w3-text-white">
-                            <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
-                                Desenvolvedor de Softwares
-                        </p>
-                        <p class="w3-text-white">
-                            <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
-                            Lisboa, Portugal
-                        </p>
-                        <p class="w3-text-white"><i
-                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-light-blue"></i>
-                            <a href="mailto:lucasluizss@live.com" target="_blank"
-                                title="Me envie um e-mail">lucasluizss@live.com</a>
-                        </p>
-                        <hr />
-
-                        <p class="w3-large"><b><i
-                                    class="fa fa-code fa-fw w3-margin-right w3-text-light-blue"></i>Habilidades</b></p>
-                        <p class="w3-text-white"><i class="fab fa-microsoft"></i> C#</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 85%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-microsoft"></i> .Net</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 85%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fas fa-server"></i> SQL Server</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 55%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fas fa-database"></i> MongoDB</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 65%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-html5"></i> HTML</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 70%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-css3"></i> CSS</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 40%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-js-square"></i> Java Script</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 90%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-node"></i> Node.js</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 70%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-react"></i> React JS</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 50%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-react"></i> React Native</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 40%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-angular"></i> Angular</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 80%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fab fa-git-square"></i> Git</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 85%"></div>
-                        </div>
-                        <p class="w3-text-white"><i class="fas fa-sitemap"></i> Infraestrutura</p>
-                        <div class="w3-dark-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-light-blue progress-bar"
-                                style="width: 40%"></div>
-                        </div>
-                        <br />
-
-                        <p class="w3-large w3-text-theme"><b><i
-                                    class="fa fa-globe fa-fw w3-margin-right w3-text-light-blue"></i>Idiomas</b></p>
-                        <p class="w3-text-white">Intermediate English</p>
-                        <div class="w3-dark-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-light-blue progress-bar"></div>
-                        </div>
-                        <br />
-                    </div>
-                </div>
-                <br />
-                <!-- End Left Column -->
-            </div>
-            <!-- Right Column -->
-            <div class="w3-twothird">
-                <div class="w3-container w3-card-2 w3-grey w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-light-blue"></i><b>Experiência</b>
-                    </h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min">Desenvolvedor Full stack
-                            <a href="http://www.aubay.pt" target="_blank" class="company"><b>Aubay</b></a>
-                        </h5>
-                        <h6 class="w3-text-light-blue"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>
-                            Julho 2020 -
-                            <span class="w3-tag w3-light-blue w3-round-xxlarge">Atualmente</span>
-                        </h6>
-                        <p class="w3-text-white">
-                            <!-- <i class="fas fa-angle-double-right"></i>
-                            Descrição
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Automatização de processos internos;
-                            <br /> -->
-                            <i class="fas fa-angle-double-right"></i>
-                            Utilizando: C# com .Net Framework/Core, Angular, TypeScript and SQL Server
-                        </p>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min">Desenvolvedor Full stack
-                            <a href="http://www.confitec.com.br" target="_blank" class="company"><b>Confitec</b></a>
-                        </h5>
-                        <h6 class="w3-text-light-blue"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>
-                            Novembro 2019 - Julho 2020
-                        </h6>
-                        <p class="w3-text-white">
-                            <i class="fas fa-angle-double-right"></i>
-                            Análise e sustentação dos projetos situados na equipe do PROJUR
-                            (Software Web de operação e gestão do processo de trabalho da área jurídica de uma companhia seguradora);
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Automatização de processos internos;
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Utilizando: C# com .Net Framework/Core, Angular, TypeScript and SQL Server
-                        </p>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min">Analista Desenvolvedor
-                            <a href="http://www.avivatec.com.br" target="_blank" class="company"><b>Avivatec</b></a>
-                        </h5>
-                        <h6 class="w3-text-light-blue"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>
-                            Abril 2019 - Novembro 2019
-                        </h6>
-                        <p class="w3-text-white">
-                            <i class="fas fa-angle-double-right"></i>
-                            Atuei em projetos de clientes da empresa em áreas distintas auxiliando na refatoração,
-                            manutenção, desenvolvimento de novos recursos e melhoria de performace nos sistemas.
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Utilizando: C# com .Net Core, Angular, TypeScript and SQL Server
-                        </p>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min">Desenvolvedor de Software Júnior
-                            <a href="https://mark2market.com.br" class="company" target="_blank"><b>Mark 2
-                                    Market</b></a>
-                        </h5>
-                        <h6 class="w3-text-light-blue"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>
-                            Outubro 2018 - Abril 2019
-                        </h6>
-                        <p class="w3-text-white">
-                            <i class="fas fa-angle-double-right"></i>
-                            Realizei análises de requisitos com cliente e desenvolvi recursos e correções nos módulos de
-                            integração.
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Contribui na implantação de padrões modernos de arquitetura na API de integrações, induzindo
-                            maior
-                            escalabilidade em sua execução e simplificando seu desenvolvimento.
-                            <br />
-                        </p>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min">Estagiário em Desenvolvimento de Software</h5>
-                        <h6 class="w3-text-light-blue"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Maio
-                            2017 - Setembro 2018</h6>
-                        <p class="w3-text-white">
-                            <i class="fas fa-angle-double-right"></i>
-                            Atuei no desenvolvimento de novas features e contribui para a sustentação, reduzindo em até
-                            50% a ocorrências de bugs no Monitor,
-                            uma plataforma SAAS para gestão de tesouraria e operações financeiras de grandes empresas;
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Tecnologias: ASP.NET C# Web API, Python, Node.js, Websockets, Swagger, Ember.js, Kendo-UI,
-                            MySQL e MongoDB;
-                        </p>
-                    </div>
-                    <hr />
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min">Estagiário de TI
-                            <a href="https://uit.com.br" class="company" target="_blank"><b>Union IT</b></a>
-                        </h5>
-                        <h6 class="w3-text-light-blue"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Janeiro
-                            2017 - Abril 2017</h6>
-                        <p class="w3-text-white">
-                            <i class="fas fa-angle-double-right"></i>
-                            Participei do suporte nos processos e projetos, desenvolvendo conhecimento em tecnologias de
-                            TI voltadas para infraestrutura.
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Acompanhei auxiliando no levantamento de necessidades dos usuários voltadas a TI;
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Prestei apoio nas tarefas de serviços de TI diretamente com analistas e indicadores;
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Fiquei por um período alocado no NOC (Centro de Operações de Rede) do cliente, para
-                            monitoração,
-                            refinação e solução de incidentes na infraestrutura.
-                        </p>
-                        <hr />
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min">Estagiário em Desenvolvimento de Software
-                            <a href="http://iatec.com" target="_blank" class="company"><b>IATec</b></a>
-                        </h5>
-                        <h6 class="w3-text-light-blue"><i class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Março
-                            2016 - Dezembro 2016</h6>
-                        <p class="w3-text-white"><i class="fas fa-angle-double-right"></i> Programação e Desenvolvimento
-                            de Sistemas Web.
-                            <br />
-                            <i class="fas fa-angle-double-right"></i>
-                            Atuei em projetos para a DSA (Divisão Sul Americana da IASD), utilizando as seguintes
-                            tecnologias: ASP.NET C# MVC, NHibernate, SQL Server, HTML, CSS, Bootstrap, Kendo-UI e
-                            Jquery.
-                        </p>
-                        <br />
-                    </div>
-                </div>
-
-                <div class="w3-container w3-card-2 w3-grey">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-light-blue"></i><b>Formação
-                            Acadêmica</b></h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min"><i class="fas fa-university"></i>
-                            <a href="https://unasp.br" target="_blank" class="no-decoration">UNASP</a>
-                        </h5>
-                        <h6 class="w3-text-light-blue"><i
-                                class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Fevereiro 2015 - Dezembro 2018
-                        </h6>
-                        <p class="w3-text-white"><i class="fas fa-angle-double-right"></i> Bacharelado em Ciência da
-                            Computação</p>
-                        <p class="w3-text-white"><i class="fas fa-angle-double-right"></i>
-                            Elaborar programas de informática, analisar as necessidades dos usuários, criar softwares e
-                            aplicativos, formar equipes de criação e instalar sistemas de computação,
-                            entre outras atividades. Trabalhando em três frentes distintas, sendo Arquitetura de
-                            Sistemas Computacionais, Realidade Virtual e Engenharia de Softwares.
-                        </p>
-                        <p class="w3-text-white"><i class="fas fa-angle-double-right"></i>
-                            TCC: <a href="https://goo.gl/dWkQ54" target="_blank"
-                                title="Dê uma olhada no meu trabalho...">Práticas e Tecnologias Ágeis para
-                                Desenvolvimento de Software baseado em uma Arquitetura Moderna</a>
-                        </p>
-                        <p class="w3-text-white"><i class="fas fa-angle-double-right"></i>
-                            Nota: 10,00
-                        </p>
-                        <hr />
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity-min"><i class="fas fa-school"></i>
-                            <a href="https://edessa.educacaoadventista.org.br/" target="_blank">EDESSA</a>
-                        </h5>
-                        <h6 class="w3-text-light-blue"><i
-                                class="fas fa-calendar-alt fa-fw w3-margin-right"></i>Fevereiro 2011 - Dezembro 2014
-                        </h6>
-                        <p class="w3-text-white"><i class="fas fa-angle-double-right"></i> Ensino Médio</p>
-                        <br />
-                    </div>
-                </div>
-                <!-- End Right Column -->
-            </div>
-            <!-- End Grid -->
-        </div>
-        <!-- End Page Container -->
-    </div>
-
-    <footer class="w3-container w3-grey w3-center w3-margin-top">
-        <p class="w3-text-white">Encontre-me nas redes sociais.</p>
-        <a class="w3-button w3-large w3-light-blue" href="https://facebook.com/lucasluizss" title="Facebook"
-            target="_blank">
-            <i class="fab fa-facebook-square"></i>
-        </a>
-        <a class="w3-button w3-large w3-light-blue" href="https://instagram.com/lucasluizss" title="Instagram"
-            target="_blank">
-            <i class="fab fa-instagram"></i>
-        </a>
-        <a class="w3-button w3-large w3-light-blue" href="https://medium.com/@lucasluizss/" title="Medium"
-            target="_blank">
-            <i class="fab fa-medium"></i>
-        </a>
-        <a class="w3-button w3-large w3-light-blue" href="https://twitter.com/lucasluizss" title="Twitter"
-            target="_blank">
-            <i class="fab fa-twitter-square"></i>
-        </a>
-        <a class="w3-button w3-large w3-light-blue" href="https://github.com/lucasluizss" title="Github"
-            target="_blank">
-            <i class="fab fa-github-square"></i>
-        </a>
-        <a class="w3-button w3-large w3-light-blue" href="https://www.linkedin.com/in/lucasluizss/" title="LinkedIn"
-            target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <p class="w3-text-white">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
-                target="_blank">w3.css</a></p>
-    </footer>
-</body>
-
+	<body class="w3-dark-grey">
+		<!-- Page Container -->
+		<div class="w3-content w3-margin-top mw-1400">
+			<!-- The Grid -->
+			<div class="w3-row-padding">
+				<!-- Left Column -->
+				<div class="w3-third">
+					<div class="w3-grey w3-text-grey w3-card-4">
+						<div class="w3-display-container">
+							<img
+								src="https://avatars1.githubusercontent.com/u/22208286?s=400&v=4"
+								class="w-100"
+								alt="Avatar"
+								title="Lucas Silva"
+							/>
+							<div class="w3-display-bottomleft w3-container w3-text-black">
+								<h2 class="w3-tag w3-light-blue w3-round-xxlarge">
+									<strong>Lucas Silva</strong>
+								</h2>
+							</div>
+						</div>
+						<div class="w3-container">
+							<p class="w3-text-white">
+								<em
+									class="
+										fa fa-briefcase fa-fw
+										w3-margin-right w3-large w3-text-light-blue
+									"
+								></em>
+								Desenvolvedor de Softwares
+							</p>
+							<p class="w3-text-white">
+								<em
+									class="
+										fa fa-home fa-fw
+										w3-margin-right w3-large w3-text-light-blue
+									"
+								></em>
+								Porto, Portugal
+							</p>
+							<p class="w3-text-white">
+								<em
+									class="
+										fa fa-envelope fa-fw
+										w3-margin-right w3-large w3-text-light-blue
+									"
+								></em>
+								<a
+									href="mailto:lucasluizss@live.com"
+									target="_blank"
+									title="Me envie um e-mail"
+									>lucasluizss@live.com</a
+								>
+							</p>
+							<p class="w3-text-white">
+								<em
+									class="
+										fab
+										fa-telegram-plane fa-fw
+										w3-margin-right w3-large w3-text-light-blue
+									"
+								></em>
+								<a
+									href="https://t.me/lucasluizss"
+									target="_blank"
+									title="Me envie uma mensagem no Telegram"
+									>@lucasluizss</a
+								>
+							</p>
+							<hr />
+							<p class="w3-large">
+								<strong
+									><em
+										class="fa fa-code fa-fw w3-margin-right w3-text-light-blue"
+									></em
+									>Habilidades</strong
+								>
+							</p>
+							<p class="w3-text-white"><em class="fab fa-microsoft"></em> C#</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-85
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fab fa-microsoft"></em> .Net
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-85
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fas fa-server"></em> SQL Server
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-55
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fas fa-database"></em> MongoDB
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-65
+									"
+								></div>
+							</div>
+							<p class="w3-text-white"><em class="fab fa-html5"></em> HTML</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-70
+									"
+								></div>
+							</div>
+							<p class="w3-text-white"><em class="fab fa-css3"></em> CSS</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-40
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fab fa-js-square"></em> Java Script
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-90
+									"
+								></div>
+							</div>
+							<p class="w3-text-white"><em class="fab fa-node"></em> Node.js</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-70
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fab fa-react"></em> React JS
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-50
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fab fa-react"></em> React Native
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-40
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fab fa-angular"></em> Angular
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-80
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fab fa-git-square"></em> Git
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-85
+									"
+								></div>
+							</div>
+							<p class="w3-text-white">
+								<em class="fas fa-sitemap"></em> Infraestrutura
+							</p>
+							<div class="w3-dark-grey w3-round-xlarge w3-small">
+								<div
+									class="
+										w3-container w3-center w3-round-xlarge w3-light-blue
+										progress-bar
+										w-40
+									"
+								></div>
+							</div>
+							<br />
+							<p class="w3-large w3-text-theme">
+								<strong
+									><em
+										class="fa fa-globe fa-fw w3-margin-right w3-text-light-blue"
+									></em
+									>Idiomas</strong
+								>
+							</p>
+							<p class="w3-text-white">Intermediate English</p>
+							<div class="w3-dark-grey w3-round-xlarge">
+								<div class="w3-round-xlarge w3-light-blue progress-bar"></div>
+							</div>
+							<br />
+						</div>
+					</div>
+					<br />
+					<!-- End Left Column -->
+				</div>
+				<!-- Right Column -->
+				<div class="w3-twothird">
+					<div class="w3-container w3-card-2 w3-grey w3-margin-bottom">
+						<h2 class="w3-text-grey w3-padding-16">
+							<em
+								class="
+									fa fa-suitcase fa-fw
+									w3-margin-right w3-xxlarge w3-text-light-blue
+								"
+							></em
+							><strong>Experiência</strong>
+						</h2>
+						<div class="w3-container">
+							<h5 class="w3-opacity-min">
+								Desenvolvedor Full stack
+								<a
+									href="http://www.aubay.pt"
+									target="_blank"
+									class="company"
+									rel="noopener"
+									><strong>Aubay</strong></a
+								>
+							</h5>
+							<h6 class="w3-text-light-blue">
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em>
+								Julho 2020 -
+								<span class="w3-tag w3-light-blue w3-round-xxlarge"
+									>Atualmente</span
+								>
+							</h6>
+							<p class="w3-text-white">
+								<strong>Cocus</strong>
+								<br />
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								><em>Março 2021 - Atualmente</em>
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Atuei no produto Web Listing da Cocus, desenvolvendo novas
+								features, correções e melhorias nos módulos existentes.
+								Contribui no OWG (Order With Google), um projeto de pedidos de
+								comida pelo Google para restaurantes da Alemanha.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Tecnologias: Angular 2+, Bootstrap, Material Design, TypeScript,
+								Node.js, Express.js, NestJS.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Ferramentas: Jira, Confluence, GitLab, MS Teams e VS Code.
+							</p>
+							<p class="w3-text-white">
+								<strong>Santander UK</strong>
+								<br />
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								><em>Setembro 2020 - Março 2021</em>
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Integrei o time de desenvolvimento do Santander UK para atuar no
+								projeto eFX, uma plataforma de forex universal. Realizando
+								criação e alteração de scripts e no desenvolvimento de uma
+								plataforma interna que visa os testes das funcionalidades da
+								aplicação.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Tecnologias: Angular 2+, Bootstrap, TypeScript, Node.js, Express
+								and Websockets.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Ferramentas: Jira, Confluence, Bitbucket, Zoom, MS Teams.
+							</p>
+							<p class="w3-text-white">
+								<strong>CodeOne</strong>
+								<br />
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								><em>Julho 2020 - Setembro 2021</em>
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Atuei no projeto de Caixas Frios da CodeOne, desenvolvendo uma
+								API Restful com .Net Core / C#, autenticação com JWT e disparo
+								de emails com Sendgrid. Realizei o desenvolvimento da aplicação
+								web com Angular 9, implementando localização e o suporte a mapas
+								e três idiomas no sistema.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Tecnologias: C# .Net Core, SQL Server, Angular 2+, Bootstrap,
+								Sendgrid and Swagger.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Ferramentas: Azure DevOps Server, Slack, VS Code.
+							</p>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity-min">
+								Desenvolvedor Full stack
+								<a
+									href="http://www.confitec.com.br"
+									target="_blank"
+									class="company"
+									rel="noopener"
+									><strong>Confitec</strong></a
+								>
+							</h5>
+							<h6 class="w3-text-light-blue">
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em>
+								Novembro 2019 - Julho 2020
+							</h6>
+							<p class="w3-text-white">
+								<em class="fas fa-angle-double-right"></em>
+								Análise e sustentação dos projetos situados na equipe do PROJUR
+								(Software Web de operação e gestão do processo de trabalho da
+								área jurídica de uma companhia seguradora);
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Automatização de processos internos;
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Contribui na integração de sistema com o cliente Chubb.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Tecnologias: C# com .Net Framework/Core, Angular, TypeScript and
+								SQL Server
+                                <br />
+								<em class="fas fa-angle-double-right"></em>
+								Ferramentas: Team Foundation Server (TFS), MS Teams, Visual Studio, SQL Server Management.
+							</p>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity-min">
+								Analista Desenvolvedor
+								<a
+									href="http://www.avivatec.com.br"
+									target="_blank"
+									class="company"
+									rel="noopener"
+									><strong>Avivatec</strong></a
+								>
+							</h5>
+							<h6 class="w3-text-light-blue">
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em>
+								Abril 2019 - Novembro 2019
+							</h6>
+							<p class="w3-text-white">
+								<em class="fas fa-angle-double-right"></em>
+								Contribui no desenvolvimento projeto da CRT4 (Central de Registros de Títulos e Ativos). Auxiliando na refatoração, manutenção, desenvolvimento de novos recursos, melhoria de performance e segurança do sistema, que é utilizado por 30 bancos brasileiros.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Tecnologias: C# com .Net Core, Entity Framework Core, Swagger, Angular, TypeScript and SQL Server.
+                                <br />
+								<em class="fas fa-angle-double-right"></em>
+                                Ferramentas: Azure DevOps Server, SQL Server Management, Visual Studio, VS Code.
+							</p>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity-min">
+								Desenvolvedor de Software Júnior
+								<a
+									href="https://mark2market.com.br"
+									class="company"
+									rel="noopener"
+									target="_blank"
+									><strong>Mark 2 Market</strong></a
+								>
+							</h5>
+							<h6 class="w3-text-light-blue">
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em>
+								Maio 2017 - Abril 2019
+							</h6>
+							<p class="w3-text-white">
+								<strong>Júnior</strong>
+								<br />
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								><em>Outubro 2018 - Abril 2019</em>
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Realizei análises de requisitos com cliente e desenvolvi
+								recursos e correções para os módulos de integração.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Contribui na implantação de padrões modernos de arquitetura na
+								API de integrações, induzindo maior escalabilidade em sua
+								execução e simplificando seu crescimento.
+							</p>
+							<p class="w3-text-white">
+								<strong>Estagiário</strong>
+								<br />
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								><em>Maio 2017 - Setembro 2018</em>
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Atuei no desenvolvimento de novas features e contribui para a
+								sustentação, reduzindo em até 50% a ocorrências de bugs no
+								Monitor, uma plataforma SAAS para gestão de tesouraria e
+								operações financeiras de grandes empresas;
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Tecnologias: ASP.NET C# Web API, Python, Node.js, WebSocket,
+								Swagger, Ember.js, Kendo-UI, MySQL e MongoDB;
+							</p>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity-min">
+								Estagiário de TI
+								<a
+									href="https://uit.com.br"
+									class="company"
+									rel="noopener"
+									target="_blank"
+									><strong>Union IT</strong></a
+								>
+							</h5>
+							<h6 class="w3-text-light-blue">
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								>Janeiro 2017 - Abril 2017
+							</h6>
+							<p class="w3-text-white">
+								<em class="fas fa-angle-double-right"></em>
+								Participei do suporte nos processos e projetos, desenvolvendo
+								conhecimento em tecnologias de TI voltadas para infraestrutura.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Acompanhei auxiliando no levantamento de necessidades dos
+								usuários voltadas a TI;
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Prestei apoio nas tarefas de serviços de TI diretamente com
+								analistas e indicadores;
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Fiquei por um período alocado no NOC (Centro de Operações de
+								Rede) do cliente, para monitoração, refinação e solução de
+								incidentes na infraestrutura.
+							</p>
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity-min">
+								Estagiário em Desenvolvimento de Software
+								<a
+									href="http://iatec.com"
+									target="_blank"
+									class="company"
+									rel="noopener"
+									><strong>IATec</strong></a
+								>
+							</h5>
+							<h6 class="w3-text-light-blue">
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								>Agosto 2015 - Dezembro 2016
+							</h6>
+							<p class="w3-text-white">
+								<strong>Estágio</strong>
+								<br />
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								><em>Janeiro 2016 - Dezembro 2016</em>
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Atuei no desenvolvimento do projeto de CIPA (Convenção Interna
+								de Prevenções de Acidentes) e no projeto Committee
+								(Gerenciamento de reuniões e apontamentos), ambos projetos
+								direcionados para a DSA (Divisão Sul Americana da IASD).
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Tecnologias: ASP.NET C# MVC, NHibernate, SQL Server, HTML, CSS,
+								Bootstrap e jQuery.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Ferramentas: Visual Studio, SQL Server Management Studio.
+							</p>
+							<p class="w3-text-white">
+								<strong>Trainee</strong>
+								<br />
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								><em>Agosto 2015 - Dezembro 2015</em>
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Programa Trainee de Informática realizado pela Divisão Sul
+								Americana em parceria com o Centro Universitário Adventista de
+								São Paulo.
+								<br />
+								<em class="fas fa-angle-double-right"></em>
+								Tecnologias: C#, HTML 5, JavaScript, AspNet MVC, SQL Server,
+								Entity Framework, LINQ e NHibernate.
+							</p>
+						</div>
+					</div>
+					<div class="w3-container w3-card-2 w3-grey">
+						<h2 class="w3-text-grey w3-padding-16">
+							<em
+								class="
+									fa fa-university fa-fw
+									w3-margin-right w3-xxlarge w3-text-light-blue
+								"
+							></em
+							><strong>Formação Acadêmica</strong>
+						</h2>
+						<div class="w3-container">
+							<h5 class="w3-opacity-min">
+								<em class="fas fa-university"></em>
+								<a
+									href="https://unasp.br"
+									target="_blank"
+									rel="noopener"
+									class="no-decoration"
+									>UNASP</a
+								>
+							</h5>
+							<h6 class="w3-text-light-blue">
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								>Fevereiro 2015 - Dezembro 2018
+							</h6>
+							<p class="w3-text-white">
+								<em class="fas fa-angle-double-right"></em> Bacharelado em
+								Ciência da Computação
+							</p>
+							<p class="w3-text-white">
+								<em class="fas fa-angle-double-right"></em>
+								Elaborar programas de informática, analisar as necessidades dos
+								usuários, criar softwares e aplicativos, formar equipes de
+								criação e instalar sistemas de computação, entre outras
+								atividades. Trabalhando em três frentes distintas, sendo
+								Arquitetura de Sistemas Computacionais, Realidade Virtual e
+								Engenharia de Softwares.
+							</p>
+							<p class="w3-text-white">
+								<em class="fas fa-angle-double-right"></em> TCC:
+								<a
+									href="https://goo.gl/dWkQ54"
+									rel="noopener"
+									target="_blank"
+									title="Dê uma olhada no meu trabalho..."
+								>
+									Práticas e Tecnologias Ágeis para Desenvolvimento de Software
+									baseado em uma Arquitetura Moderna
+								</a>
+							</p>
+							<p class="w3-text-white">
+								<em class="fas fa-angle-double-right"></em>
+								Nota: 10,00
+							</p>
+							<hr />
+						</div>
+						<div class="w3-container">
+							<h5 class="w3-opacity-min">
+								<em class="fas fa-school"></em>
+								<a
+									href="https://edessa.educacaoadventista.org.br/"
+									rel="noopener"
+									target="_blank"
+									>EDESSA</a
+								>
+							</h5>
+							<h6 class="w3-text-light-blue">
+								<em class="fas fa-calendar-alt fa-fw w3-margin-right"></em
+								>Fevereiro 2011 - Dezembro 2014
+							</h6>
+							<p class="w3-text-white">
+								<em class="fas fa-angle-double-right"></em> Ensino Médio
+							</p>
+							<br />
+						</div>
+					</div>
+					<!-- End Right Column -->
+				</div>
+				<!-- End Grid -->
+			</div>
+			<!-- End Page Container -->
+		</div>
+		<footer class="w3-container w3-grey w3-center w3-margin-top">
+			<p class="w3-text-white">Encontre-me nas redes sociais.</p>
+			<a
+				class="w3-button w3-large w3-light-blue"
+				href="https://facebook.com/lucasluizss"
+				rel="noopener"
+				title="Facebook"
+				target="_blank"
+				><em class="fab fa-facebook-square"></em
+			></a>
+			<a
+				class="w3-button w3-large w3-light-blue"
+				href="https://instagram.com/lucasluizss"
+				rel="noopener"
+				title="Instagram"
+				target="_blank"
+			>
+				<em class="fab fa-instagram"></em>
+			</a>
+			<a
+				class="w3-button w3-large w3-light-blue"
+				href="https://medium.com/@lucasluizss/"
+				rel="noopener"
+				title="Medium"
+				target="_blank"
+			>
+				<em class="fab fa-medium"></em>
+			</a>
+			<a
+				class="w3-button w3-large w3-light-blue"
+				href="https://twitter.com/lucasluizss"
+				rel="noopener"
+				title="Twitter"
+				target="_blank"
+			>
+				<em class="fab fa-twitter-square"></em>
+			</a>
+			<a
+				class="w3-button w3-large w3-light-blue"
+				href="https://github.com/lucasluizss"
+				rel="noopener"
+				title="Github"
+				target="_blank"
+			>
+				<em class="fab fa-github-square"></em>
+			</a>
+			<a
+				class="w3-button w3-large w3-light-blue"
+				href="https://www.linkedin.com/in/lucasluizss/"
+				rel="noopener"
+				title="LinkedIn"
+				target="_blank"
+			>
+				<em class="fab fa-linkedin"></em>
+			</a>
+			<p class="w3-text-white">
+				Powered by
+				<a
+					href="https://www.w3schools.com/w3css/default.asp"
+					rel="noopener"
+					target="_blank"
+					>w3.css</a
+				>
+			</p>
+		</footer>
+	</body>
 </html>
